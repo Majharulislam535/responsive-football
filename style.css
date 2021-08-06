@@ -1,0 +1,199 @@
+  /*--------------------------
+         google font 
+   -------------------------- */
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+  body {
+      font-family     : 'Poppins', sans-serif;
+      margin          : 0;
+      padding         : 0;
+      background-color: #fbfbfd;
+  }
+
+
+  /*------------------------------
+            header-section 
+   --------------------------------*/
+  header {
+      background-color: #2D25A0;
+      color           : white;
+      margin-bottom   : 70px;
+  }
+
+  .hero-section {
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+  }
+
+  .hero-img img {
+      width : 556.01px;
+      height: 438px;
+  }
+
+  .hero-text {
+      padding: 10px 88px;
+  }
+
+  .hero-text h1 {
+      font-size: 64px;
+  }
+
+  .hero-img {
+      padding   : 70px 30px;
+      transition: all 3s ease-in-out;
+  }
+
+  .hero-img:hover {
+      transform: scale(1.1);
+  }
+
+  .button-live {
+      color           : white;
+      text-decoration : none;
+      padding         : 10px 20px;
+      background-color: #E02C6D;
+      transition      : all 3s ease-in-out;
+  }
+
+
+  /* ------------------------------
+             main section 
+  --------------------------------*/
+
+  .container {
+      width : 880px;
+      margin: 0 auto;
+  }
+
+  main {
+      margin-bottom: 50px;
+  }
+
+  .player {
+      display              : grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap             : 27px;
+      justify-content      : center;
+      margin-bottom        : 40px;
+  }
+
+  .player-card {
+      background-color: #fff;
+      padding         : 15px;
+      box-shadow      : 0px 0px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .player-img img {
+      width : 300px;
+      height: 256px;
+  }
+
+  .player-details p {
+
+      color    : #6C6C6C;
+      font-size: 16px;
+  }
+
+  .player-details h3 {
+      margin   : 0;
+      font-size: 28px;
+  }
+
+  .extra {
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+  }
+
+  .extra-img img {
+      width : 284px;
+      height: 200px;
+  }
+
+  /*--------------------------------
+              footer section        
+ ---------------------------------- */
+  .football,
+  .footer,
+  .social-icons {
+      text-align: center;
+  }
+
+  .football img {
+      width : 227.82px;
+      height: 67.42px;
+  }
+
+  .social-media {
+      text-decoration : none;
+      padding         : 7px 9px;
+      color           : gray;
+      background-color: #dadada;
+      border-radius   : 50%;
+      margin-right    : 8px;
+  }
+
+  /*------------------------------------
+                 media query
+    -------------------------------------*/
+  /* ----------- mobile devise  ---------------*/
+
+  @media screen and (max-width:668px) {
+      .hero-section {
+          display       : flex;
+          flex-direction: column;
+      }
+
+      .hero-img img {
+          width : 329px;
+          height: 259.17px;
+      }
+
+      .hero-text h1 {
+          font-size: 44px;
+      }
+
+      .container {
+          width: 100%;
+      }
+
+      .player {
+          grid-template-columns: 330px;
+      }
+
+      .extra-img img {
+          width : 184px;
+          height: 100px;
+      }
+
+  }
+
+  /* ----------------- tablet devise ------------*/
+
+  @media screen and (min-width:669px) and (max-width:991.98px) {
+      .hero-section {
+          display       : flex;
+          flex-direction: row;
+      }
+
+      .hero-img img {
+          width : 329px;
+          height: 259.17px;
+      }
+
+      .hero-text h1 {
+          font-size: 44px;
+      }
+
+      .player {
+          grid-template-columns: 330px 330px;
+      }
+
+      .extra-img img {
+          width : 184px;
+          height: 100px;
+      }
+  }
